@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.element {
+    -webkit-transform: rotate(45deg);  /* Safari et Chrome */
+    -moz-transform: rotate(45deg);     /* Firefox */
+    -ms-transform: rotate(45deg);      /* Internet Explorer */
+    transform: rotate(45deg);          /* Propriété standard, pour les navigateurs modernes */
+  }
+  
+  
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121212;
