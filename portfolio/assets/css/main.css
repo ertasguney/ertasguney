@@ -8,12 +8,9 @@
 
     /* Style du formulaire */
     form {
-      background: #fff9c4;
-      padding: 2.5rem 3rem;
       border-radius: 20px;
       box-shadow: 0 8px 32px rgba(191, 161, 0, 0.15);
       width: 100%;
-      max-width: 400px;
       color: #4b3b00;
       display: flex;
       flex-direction: column;
