@@ -79,8 +79,14 @@
     }
 
     @media (max-width: 480px) {
-      form {
-        padding: 2rem 1rem;
-        max-width: 95vw;
-      }
-    }
+  .center-container {
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 100vh; /* Pour rester centré verticalement */
+    padding: 0 5vw;    /* Un peu de marge sur les côtés si tu veux */
+  }
+  form {
+    padding: 2rem 1rem;
+    max-width: 95vw;
+  }
+}
