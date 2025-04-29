@@ -5,69 +5,80 @@
   justify-content: center;
   align-items: center;
 }
+
+/* Style du formulaire */
+form {
+  background: #fff9c4;
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(191, 161, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  color: #4b3b00;
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #bfa100;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fffde7;
+  color: #4b3b00;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: inherit;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ffec3d;
+  box-shadow: 0 0 8px #ffec3d;
+  background-color: #fffde7;
+}
+
+button {
+  width: 100%;
+  padding: 0.85rem;
+  background-color: #bfa100;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(191, 161, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #ffec3d;
+  color: #4b3b00;
+  box-shadow: 0 6px 14px rgba(255, 236, 61, 0.25);
+}
+
+@media (max-width: 480px) {
   form {
-  
-    padding: 2.5rem 3rem;
-    border-radius: 20px;
- 
-    width: 100%;
-    max-width: 400px;
-    color: #4b3b00;
+    padding: 2rem 1rem;
+    max-width: 95vw;
   }
-  form h2 {
-    margin-bottom: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-  }
-  label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-  }
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid #bfa100;
-    border-radius: 10px;
-    font-size: 1rem;
-    background-color: #fff9c4;
-    color: #4b3b00;
-    transition: border-color 0.3s ease;
-    font-family: inherit;
-    resize: vertical;
-  }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  textarea:focus {
-    outline: none;
-    border-color: #ffec3d;
-    box-shadow: 0 0 8px #ffec3d;
-    background-color: #fffde7;
-  }
-  button {
-    width: 100%;
-    padding: 0.85rem;
-    background-color: #bfa100;
-    border: none;
-    border-radius: 12px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #fff;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(191, 161, 0, 0.6);
-    transition: background-color 0.3s ease;
-  }
-  button:hover {
-    background-color: #ffec3d;
-    color: #4b3b00;
-    box-shadow: 0 6px 14px rgba(255, 236, 61, 0.8);
-  }
-  @media (max-width: 480px) {
-    form {
-      padding: 2rem 1.5rem;
-      max-width: 90vw;
-    }
-  }
+}
